@@ -19,6 +19,17 @@ without an actual LSP.
 
 ## Supported Features
 
+### Format File
+
+Command that will accumulate all the formatting commands, so you can
+plug this command in in something like conform.
+
+```lua
+require("kotlin-toolchain").file.format({
+  sort_imports = true
+})
+```
+
 ### Sort Imports
 
 Sort imports in current file:
