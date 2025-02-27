@@ -36,7 +36,7 @@ local function sort_on_values(imports)
       end
     end
 
-    return false
+    return #left_simple_imports < #right_simple_imports
   end)
 end
 
