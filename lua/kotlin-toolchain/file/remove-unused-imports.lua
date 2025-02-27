@@ -15,6 +15,10 @@ local function collect_used_types(root, filetype)
         (call_expression) @ignore)
       (call_expression
         . (simple_identifier) @identifier)
+      (callable_reference
+        . (simple_identifier) @identifier)
+      (callable_reference
+        . (type_identifier) @identifier)
       (infix_expression
         (simple_identifier) @identifier)
       (additive_expression
